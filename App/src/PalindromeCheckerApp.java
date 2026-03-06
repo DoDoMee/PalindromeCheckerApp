@@ -1,6 +1,20 @@
-//use Case 1:Welcome Page
+//use Case 2:Welcome Page
 public class PalindromeCheckerApp {
     public static void main(String[] args){
-        System.out.println("Welcome to Palindrome Checker App Management System");
+        String word = "madam";
+
+        // Reverse the string
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+
+        // Check if palindrome
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome.");
+        } else {
+            System.out.println(word + " is not a Palindrome.");
+        }
     }
 }
